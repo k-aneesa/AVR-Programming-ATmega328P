@@ -17,9 +17,9 @@ int main(void)
     {
 		for(uint8_t i=0; i<8; i++)
 		{
-			PORTB |=(1<< i);
+			PORTB |=(1<< i); // turn the corresponding led on
 			_delay_ms(1000);
-			PORTB &=~(1<< i);
+			PORTB &=~(1<< i);  // turn the corresponding led off
 			_delay_ms(1000);
 			
 		}
